@@ -13,7 +13,12 @@ export class RestaurantTableComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    console.log('aqui', this.dataTables);
+    console.log('aqui', this.coluns);
+
+
+
   }
 
 }

@@ -13,6 +13,7 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { ComponentsModule } from "./components/components.module";
+import { MessagesComponent } from './shared/messages/messages.component';
 
 @NgModule({
   imports: [
@@ -23,8 +24,16 @@ import { ComponentsModule } from "./components/components.module";
     NgbModule,
     RouterModule,
     AppRoutingModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(
+      {
+        timeOut: 3000,
+        // positionClass: 'toast-bottom-left',
+        preventDuplicates: true,
+        progressBar: true,
+      }
+    )
   ],
+  exports: [],
   declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent],
   providers: [],
   bootstrap: [AppComponent]

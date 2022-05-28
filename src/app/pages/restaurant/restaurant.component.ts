@@ -1,6 +1,8 @@
-import { RestaurantService } from './../../services/restaurant.service';
-import { Restaurant } from './../../shared/interfaces/restaurant';
-import { Component, OnInit } from "@angular/core";
+import { RestaurantService } from "./../../services/restaurant.service";
+import { Restaurant } from "./../../shared/interfaces/restaurant";
+import { Component, OnInit, Output } from "@angular/core";
+import { ToastrService } from "ngx-toastr";
+import { MessageService } from "src/app/services/message.service";
 
 @Component({
   selector: "app-restaurant",
@@ -8,17 +10,34 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./restaurant.component.scss"],
 })
 export class RestaurantComponent implements OnInit {
-  coluns = ["name", "rating", "deliveryEstimate", "category", "action"];
-  dataTables : Restaurant[];
-  constructor(private restaurantService: RestaurantService) {}
+  @Output() coluns = [
+    "name",
+    "rating",
+    "deliveryEstimate",
+    "category",
+    "action",
+  ];
+  @Output() dataTables: Restaurant[];
+  constructor(
+    private restaurantService: RestaurantService,
+    private message: MessageService
+  ) {}
 
   ngOnInit(): void {
     this.getRestaurat();
   }
 
   getRestaurat() {
-    this.restaurantService.getRestaurant().subscribe((res: any) => {
-      this.dataTables = res;
-    })
+    this.restaurantService.getRestaurant().subscribe(
+      (res: Restaurant[]) => this.dataTables = res,
+      (error: any) => {
+        this.message.showNotification(
+          "error",
+          "Error loading restaurants",
+          "Erro!!!"
+        );
+        console.error(error);
+      }
+    );
   }
 }

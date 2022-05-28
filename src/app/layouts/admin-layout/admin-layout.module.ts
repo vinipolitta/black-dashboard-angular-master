@@ -18,6 +18,7 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { HomeComponent } from "src/app/pages/home/home.component";
 import { RestaurantComponent } from "src/app/pages/restaurant/restaurant.component";
 import { RestaurantTableComponent } from "src/app/pages/restaurant/restaurant-table/restaurant-table.component";
+import { MessagesComponent } from "src/app/shared/messages/messages.component";
 
 @NgModule({
   imports: [
@@ -37,7 +38,8 @@ import { RestaurantTableComponent } from "src/app/pages/restaurant/restaurant-ta
     MapComponent,
     HomeComponent,
     RestaurantComponent,
-    RestaurantTableComponent
+    RestaurantTableComponent,
+    MessagesComponent
     // RtlComponent
   ],
 })
