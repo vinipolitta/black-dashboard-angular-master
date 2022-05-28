@@ -17,6 +17,7 @@ import { TypographyComponent } from "../../pages/typography/typography.component
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { HomeComponent } from "src/app/pages/home/home.component";
 import { RestaurantComponent } from "src/app/pages/restaurant/restaurant.component";
+import { RestaurantTableComponent } from "src/app/pages/restaurant/restaurant-table/restaurant-table.component";
 
 @NgModule({
   imports: [
@@ -36,6 +37,7 @@ import { RestaurantComponent } from "src/app/pages/restaurant/restaurant.compone
     MapComponent,
     HomeComponent,
     RestaurantComponent,
+    RestaurantTableComponent
     // RtlComponent
   ],
 })

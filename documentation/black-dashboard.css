@@ -1828,6 +1828,7 @@ pre code {
   display: block;
   width: 100%;
   overflow-x: auto;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
@@ -14337,7 +14338,7 @@ hr {
 }
 
 .table-responsive {
-  overflow: scroll;
+  /* overflow: scroll; */
   padding-bottom: 10px;
 }
 

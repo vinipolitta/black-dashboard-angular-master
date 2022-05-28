@@ -52,12 +52,12 @@ export const ROUTES: RouteInfo[] = [
   //   icon: "icon-single-02",
   //   class: "",
   // },
-  {
-    path: "/tables",
-    title: "Table List",
-    icon: "icon-puzzle-10",
-    class: "",
-  },
+  // {
+  //   path: "/tables",
+  //   title: "Table List",
+  //   icon: "icon-puzzle-10",
+  //   class: "",
+  // },
   // {
   //   path: "/typography",
   //   title: "Typography",
