@@ -1,3 +1,4 @@
+import { MenuItem } from "./../shared/interfaces/menu-item";
 import { Restaurant } from "./../shared/interfaces/restaurant";
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
@@ -25,6 +26,12 @@ export class RestaurantService {
   getReviews(id: String): Observable<any> {
     return this.http
       .get<any>(this.api + `/restaurants/${id}/reviews`)
+      .pipe(take(1));
+  }
+
+  menuOfRestaurant(id: string): Observable<MenuItem[]> {
+    return this.http
+      .get<any>(this.api + `/restaurants/${id}/menu`)
       .pipe(take(1));
   }
 }

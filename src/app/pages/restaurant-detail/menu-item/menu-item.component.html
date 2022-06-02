@@ -1,6 +1,4 @@
 <div class="card-header">
-  <h5 class="card-category">Padaria</h5>
-
   <table class="table tablesorter" id="">
     <thead class="text-primary">
       <tr>
@@ -9,31 +7,19 @@
     </thead>
     <tbody>
       <tr>
-        <td style="width: 150px">
+        <td style="width: 40%">
           <span class="">
-            <img class="widthImage" src="assets/img/foods/cupcake.png" />
+            <img class="widthImage" src="{{ menuItem.imagePath }}" />
+            &nbsp;
+            <span class="">{{ menuItem.name }}</span>
           </span>
-          &nbsp;
-          <span class="">Cup Cake</span>
         </td>
-        <td>Cup Cake recheado de Doce de Leite</td>
-        <td>R$ 10,00</td>
+        <td>{{ menuItem.description }}</td>
+        <td>{{ menuItem.price | currency: "BRL":true }}</td>
         <td class="text-center">
-          <a class=""><i class="fa fa-plus-circle"></i> Adicionar</a>
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 150px">
-          <span class="">
-            <img class="widthImage" src="assets/img/foods/cupcake.png" />
-          </span>
-          &nbsp;
-          <span class="">Cup Cake</span>
-        </td>
-        <td>Cup Cake recheado de Doce de Leite</td>
-        <td>R$ 10,00</td>
-        <td class="text-center">
-          <a class=""><i class="fa fa-plus-circle"></i> Adicionar</a>
+          <a (click)="emitAddEvent()" class=""
+            ><i class="fa fa-plus-circle"></i> Adicionar</a
+          >
         </td>
       </tr>
     </tbody>
