@@ -8,8 +8,8 @@
       </tr>
     </thead>
     <tbody *ngFor="let item of dataTables">
-      <tr class="text-center">
-        <th  scope="row">
+      <tr class="text-center" >
+        <th  scope="row"  [routerLink]="['/restaurant', item.id]">
           <div class="media align-items-center">
             <a
               href="javascript:void(0)"
@@ -45,6 +45,7 @@
 
           </div>
         </td>
+
         <td class="text-centre">
           <div ngbDropdown placement="bottom-right">
             <a

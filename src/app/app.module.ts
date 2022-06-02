@@ -14,6 +14,7 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { AppRoutingModule } from "./app-routing.module";
 import { ComponentsModule } from "./components/components.module";
 import { MessagesComponent } from './shared/messages/messages.component';
+import { RestaurantDetailComponent } from './pages/restaurant-detail/restaurant-detail.component';
 
 @NgModule({
   imports: [
@@ -34,7 +35,7 @@ import { MessagesComponent } from './shared/messages/messages.component';
     )
   ],
   exports: [],
-  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent],
+  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent, RestaurantDetailComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
