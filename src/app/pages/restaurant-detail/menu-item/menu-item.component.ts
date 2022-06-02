@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuItemComponent implements OnInit {
 
+  coluns = ['name', 'description', 'price', 'add']
+
   constructor() { }
 
   ngOnInit(): void {
