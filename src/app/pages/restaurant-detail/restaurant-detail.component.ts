@@ -11,6 +11,9 @@ import { ActivatedRoute } from '@angular/router';
 export class RestaurantDetailComponent implements OnInit {
   restaurant: Restaurant;
   routerId;
+  public clicked: boolean = true;
+  public clicked1: boolean = false;
+  public clicked2: boolean = false;
 
   constructor(private restaurantService: RestaurantService, private route: ActivatedRoute) { }
 
