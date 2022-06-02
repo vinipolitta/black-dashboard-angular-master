@@ -1,4 +1,7 @@
+import { Restaurant } from 'src/app/shared/interfaces/restaurant';
+import { RestaurantService } from './../../services/restaurant.service';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-restaurant-detail',
@@ -6,14 +9,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./restaurant-detail.component.scss']
 })
 export class RestaurantDetailComponent implements OnInit {
-  public clicked: boolean = true;
-  public clicked1: boolean = false;
-  public clicked2: boolean = false;
+  restaurant: Restaurant;
+  routerId;
 
-
-  constructor() { }
+  constructor(private restaurantService: RestaurantService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+     this.routerId = this.route.snapshot.params['id'];
+     this.getRestaurantById();
+  }
+
+  getRestaurantById() {
+    this.restaurantService.getRestaurantById(this.routerId).subscribe(res => {
+      this.restaurant = res
+      console.log(this.restaurant);
+
+    })
   }
 
 }
