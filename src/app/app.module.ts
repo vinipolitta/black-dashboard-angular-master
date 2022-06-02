@@ -15,6 +15,9 @@ import { AppRoutingModule } from "./app-routing.module";
 import { ComponentsModule } from "./components/components.module";
 import { MessagesComponent } from './shared/messages/messages.component';
 import { RestaurantDetailComponent } from './pages/restaurant-detail/restaurant-detail.component';
+import { MenuComponent } from './pages/restaurant-detail/menu/menu.component';
+import { ShoppingCardComponent } from './pages/restaurant-detail/shopping-card/shopping-card.component';
+import { MenuItemComponent } from './pages/restaurant-detail/shopping-card/menu-item/menu-item.component';
 
 @NgModule({
   imports: [
@@ -35,7 +38,7 @@ import { RestaurantDetailComponent } from './pages/restaurant-detail/restaurant-
     )
   ],
   exports: [],
-  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent, RestaurantDetailComponent],
+  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent, RestaurantDetailComponent, MenuComponent, ShoppingCardComponent, MenuItemComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

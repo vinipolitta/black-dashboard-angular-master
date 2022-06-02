@@ -1,3 +1,4 @@
+import { MenuComponent } from './../../pages/restaurant-detail/menu/menu.component';
 import { RestaurantDetailComponent } from './../../pages/restaurant-detail/restaurant-detail.component';
 import { RestaurantComponent } from "src/app/pages/restaurant/restaurant.component";
 import { HomeComponent } from "./../../pages/home/home.component";
@@ -23,6 +24,7 @@ export const AdminLayoutRoutes: Routes = [
   { path: "home", component: HomeComponent },
   { path: "restaurant", component: RestaurantComponent },
   { path: "restaurant/:id", component: RestaurantDetailComponent },
+
 
 
 
