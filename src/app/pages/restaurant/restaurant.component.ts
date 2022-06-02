@@ -15,7 +15,6 @@ export class RestaurantComponent implements OnInit {
     "rating",
     "deliveryEstimate",
     "category",
-    "action",
   ];
   @Output() dataTables: Restaurant[];
   constructor(
