@@ -31,13 +31,12 @@ export const ROUTES: RouteInfo[] = [
     icon: "icon-atom",
     class: "",
   },
-  // {
-  //   path: "/maps",
-  //   title: "Maps",
-  //   rtlTitle: "خرائط",
-  //   icon: "icon-pin",
-  //   class: "",
-  // },
+  {
+    path: "/maps",
+    title: "Maps",
+    icon: "icon-pin",
+    class: "",
+  },
   {
     path: "/notifications",
     title: "Notifications",
