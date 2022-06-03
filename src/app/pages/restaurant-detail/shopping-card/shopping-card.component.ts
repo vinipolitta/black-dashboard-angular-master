@@ -1,3 +1,4 @@
+import { ShoppingCardService } from './../../../services/shopping-card.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShoppingCardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private shoppingCardService: ShoppingCardService) { }
 
   ngOnInit(): void {
+  }
+
+
+  items(): any[] {
+    return this.shoppingCardService.items;
+  }
+
+  total(): number {
+    return this.shoppingCardService.total();
   }
 
 }

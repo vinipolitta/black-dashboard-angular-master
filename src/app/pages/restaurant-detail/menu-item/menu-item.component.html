@@ -1,9 +1,6 @@
 <div class="card-header">
-  <table class="table tablesorter" id="">
+  <!-- <table class="table tablesorter" id="">
     <thead class="text-primary">
-      <tr>
-        <th *ngFor="let colun of coluns" class="text-center">{{ colun }}</th>
-      </tr>
     </thead>
     <tbody>
       <tr>
@@ -23,5 +20,48 @@
         </td>
       </tr>
     </tbody>
-  </table>
+  </table> -->
+  <div class="cards">
+    <div class="card card-6">
+      <div class="row card__icon">
+        <img class="widthImage" src="{{ menuItem.imagePath }}" />
+        &nbsp;
+        <h3 class="d-flex align-items-center">{{ menuItem.name }}</h3>
+      </div>
+      &nbsp;
+      <h4 class="card__title">{{ menuItem.description }}</h4>
+      <h4 class="card__title">{{ menuItem.price | currency: "BRL":true }}</h4>
+      <span class="card__apply mt-2 ">
+        <a (click)="emitAddEvent()" class=""
+          ><i class="fa fa-plus-circle"></i> Adicionar</a
+        >
+      </span>
+    </div>
+  </div>
 </div>
+
+<!--
+
+GRADIENT BANNER DESIGN BY SIMON LURWER ON DRIBBBLE:
+https://dribbble.com/shots/14101951-Banners
+
+-->
+<!-- <div class="main-container">
+  <div class="heading">
+    <h1 class="heading__title">Gradient Banner Cards</h1>
+    <p class="heading__credits"><a class="heading__link" target="_blank" href="https://dribbble.com/sl">Design by Simon Lurwer on Dribbble</a></p>
+  </div>
+  <div class="cards">
+
+
+    <div class="card card-3">
+      <div class="card__icon"><i class="fas fa-bolt"></i></div>
+      <p class="card__exit"><i class="fas fa-times"></i></p>
+      <h2 class="card__title">Ut enim ad minim veniam.</h2>
+      <p class="card__apply">
+        <a class="card__link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+      </p>
+    </div>
+
+  </div>
+</div> -->

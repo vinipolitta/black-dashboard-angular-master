@@ -8,7 +8,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class MenuItemComponent implements OnInit {
 
-  coluns = ['name', 'description', 'price', 'add'];
+  // coluns = ['name', 'description', 'price', 'add'];
   @Input() menuItem: MenuItem;
   @Output() add = new EventEmitter();
   constructor() { }
