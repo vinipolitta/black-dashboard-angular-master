@@ -25,6 +25,8 @@ import { ShoppingCardComponent } from "src/app/pages/restaurant-detail/shopping-
 import { MenuItemComponent } from "src/app/pages/restaurant-detail/menu-item/menu-item.component";
 import { ReviewsComponent } from "src/app/pages/restaurant-detail/reviews/reviews.component";
 import { OrderComponent } from "src/app/pages/order/order.component";
+import { InputComponent } from "src/app/shared/input/input.component";
+import { RadioComponent } from "src/app/shared/radio/radio.component";
 
 @NgModule({
   imports: [
@@ -51,7 +53,9 @@ import { OrderComponent } from "src/app/pages/order/order.component";
     ShoppingCardComponent,
     MenuItemComponent,
     ReviewsComponent,
-    OrderComponent
+    OrderComponent,
+    InputComponent,
+    RadioComponent,
 
     // RtlComponent
   ],

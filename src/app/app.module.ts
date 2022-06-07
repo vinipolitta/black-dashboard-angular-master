@@ -33,7 +33,7 @@ import { ComponentsModule } from "./components/components.module";
     )
   ],
   exports: [],
-  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent],
+  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent, ],
   providers: [],
   bootstrap: [AppComponent]
 })
