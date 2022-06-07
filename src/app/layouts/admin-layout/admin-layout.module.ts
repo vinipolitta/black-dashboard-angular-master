@@ -24,6 +24,7 @@ import { MenuComponent } from "src/app/pages/restaurant-detail/menu/menu.compone
 import { ShoppingCardComponent } from "src/app/pages/restaurant-detail/shopping-card/shopping-card.component";
 import { MenuItemComponent } from "src/app/pages/restaurant-detail/menu-item/menu-item.component";
 import { ReviewsComponent } from "src/app/pages/restaurant-detail/reviews/reviews.component";
+import { OrderComponent } from "src/app/pages/order/order.component";
 
 @NgModule({
   imports: [
@@ -50,6 +51,7 @@ import { ReviewsComponent } from "src/app/pages/restaurant-detail/reviews/review
     ShoppingCardComponent,
     MenuItemComponent,
     ReviewsComponent,
+    OrderComponent
 
     // RtlComponent
   ],

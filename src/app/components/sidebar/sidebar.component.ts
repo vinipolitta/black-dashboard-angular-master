@@ -25,6 +25,7 @@ export const ROUTES: RouteInfo[] = [
     icon: "icon-cart",
     class: "",
   },
+
   {
     path: "/icons",
     title: "Icons",
@@ -43,6 +44,7 @@ export const ROUTES: RouteInfo[] = [
     icon: "icon-bell-55",
     class: "",
   },
+
 
   // {
   //   path: "/user",

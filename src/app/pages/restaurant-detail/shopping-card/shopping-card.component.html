@@ -23,7 +23,7 @@
 
           <td class="text-right">{{ item.value() | currency: 'BRL': true }}</td>
           <td class="text-right">
-            <a (click)="removeItem(item)" class="btn btn-sm  btn-danger"><i class="fa fa-remove"></i></a>
+            <a (click)="removeItem(item)" class="help-block text-danger"><i class="fa fa-remove"></i></a>
           </td>
 
         </tr>
@@ -45,7 +45,7 @@
           <i class="fa fa-trash"></i> Limpar
         </button>
 
-        <button href="order.html" class="btn btn-success alingBtn">
+        <button [routerLink]="['/order']"href="order.html" class="btn btn-success alingBtn">
           <i class="fa fa-credit-card"></i> Fechar Pedido
         </button>
       </div>
