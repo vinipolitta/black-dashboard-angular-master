@@ -30,6 +30,7 @@ export const AdminLayoutRoutes: Routes = [
   { path: "restaurant", component: RestaurantComponent },
   { path: "order", component: OrderComponent },
   { path: "order-summary", component: OrderSummaryComponent },
+  { path: "about", loadChildren: () => import ("../../pages/about/about.module").then(m => m.AboutModule) },
   {
     path: "restaurant/:id",
     component: RestaurantDetailComponent,

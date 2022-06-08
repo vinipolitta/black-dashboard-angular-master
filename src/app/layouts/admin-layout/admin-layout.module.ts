@@ -64,7 +64,7 @@ import { RatingComponent } from "src/app/shared/rating/rating.component";
     OrderItensComponent,
     DeliveryCostsComponent,
     OrderSummaryComponent,
-    RatingComponent
+    RatingComponent,
 
     // RtlComponent
   ],
