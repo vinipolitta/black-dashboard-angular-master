@@ -18,19 +18,16 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { HomeComponent } from "src/app/pages/home/home.component";
 import { RestaurantComponent } from "src/app/pages/restaurant/restaurant.component";
 import { RestaurantTableComponent } from "src/app/pages/restaurant/restaurant-table/restaurant-table.component";
-import { MessagesComponent } from "src/app/shared/messages/messages.component";
 import { RestaurantDetailComponent } from "src/app/pages/restaurant-detail/restaurant-detail.component";
 import { MenuComponent } from "src/app/pages/restaurant-detail/menu/menu.component";
 import { ShoppingCardComponent } from "src/app/pages/restaurant-detail/shopping-card/shopping-card.component";
 import { MenuItemComponent } from "src/app/pages/restaurant-detail/menu-item/menu-item.component";
 import { ReviewsComponent } from "src/app/pages/restaurant-detail/reviews/reviews.component";
 import { OrderComponent } from "src/app/pages/order/order.component";
-import { InputComponent } from "src/app/shared/input/input.component";
-import { RadioComponent } from "src/app/shared/radio/radio.component";
 import { OrderItensComponent } from "src/app/pages/order/order-itens/order-itens.component";
 import { DeliveryCostsComponent } from "src/app/pages/order/delivery-costs/delivery-costs.component";
 import { OrderSummaryComponent } from "src/app/pages/order-summary/order-summary.component";
-import { RatingComponent } from "src/app/shared/rating/rating.component";
+import { SharedModule } from "src/app/shared/shared.module";
 
 @NgModule({
   imports: [
@@ -40,6 +37,7 @@ import { RatingComponent } from "src/app/shared/rating/rating.component";
     HttpClientModule,
     ReactiveFormsModule,
     NgbModule,
+    SharedModule
   ],
   declarations: [
     DashboardComponent,
@@ -52,19 +50,15 @@ import { RatingComponent } from "src/app/shared/rating/rating.component";
     HomeComponent,
     RestaurantComponent,
     RestaurantTableComponent,
-    MessagesComponent,
     RestaurantDetailComponent,
     MenuComponent,
     ShoppingCardComponent,
     MenuItemComponent,
     ReviewsComponent,
     OrderComponent,
-    InputComponent,
-    RadioComponent,
     OrderItensComponent,
     DeliveryCostsComponent,
     OrderSummaryComponent,
-    RatingComponent,
 
     // RtlComponent
   ],
