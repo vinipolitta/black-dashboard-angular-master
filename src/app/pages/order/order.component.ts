@@ -5,7 +5,7 @@ import {
   Validators,
 } from "@angular/forms";
 import { CardItem } from "./../../shared/interfaces/card-item";
-import { OrderService } from "./../../services/order.service";
+import { OrderService } from "../../core/services/order.service";
 import { RadioOption } from "./../../shared/radio/radio-option.model";
 import { Component, OnInit } from "@angular/core";
 import { Order, OrderItem } from "./order.model";

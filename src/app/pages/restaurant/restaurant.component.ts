@@ -1,8 +1,8 @@
-import { RestaurantService } from "./../../services/restaurant.service";
+import { RestaurantService } from "../../core/services/restaurant.service";
 import { Restaurant } from "./../../shared/interfaces/restaurant";
 import { Component, OnInit, Output } from "@angular/core";
 import { ToastrService } from "ngx-toastr";
-import { MessageService } from "src/app/services/message.service";
+import { MessageService } from "src/app/core/services/message.service";
 
 @Component({
   selector: "app-restaurant",

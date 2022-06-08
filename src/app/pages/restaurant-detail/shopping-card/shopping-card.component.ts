@@ -1,4 +1,4 @@
-import { ShoppingCardService } from "./../../../services/shopping-card.service";
+import { ShoppingCardService } from "../../../core/services/shopping-card.service";
 import { Component, OnInit } from "@angular/core";
 
 @Component({

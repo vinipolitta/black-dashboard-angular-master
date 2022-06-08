@@ -1,10 +1,10 @@
-import { MenuItem } from "./../shared/interfaces/menu-item";
-import { CardItem } from "./../shared/interfaces/card-item";
+import { MenuItem } from "../../shared/interfaces/menu-item";
+import { CardItem } from "../../shared/interfaces/card-item";
 import { Injectable } from "@angular/core";
 
-@Injectable({
-  providedIn: "root",
-})
+@Injectable(
+
+)
 export class ShoppingCardService {
   items: CardItem[] = [];
 

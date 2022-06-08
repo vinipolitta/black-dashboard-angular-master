@@ -2,7 +2,7 @@ import { MenuItem } from './../../../shared/interfaces/menu-item';
 import { Observable } from 'rxjs';
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
-import { RestaurantService } from "src/app/services/restaurant.service";
+import { RestaurantService } from "src/app/core/services/restaurant.service";
 
 @Component({
   selector: "app-menu",

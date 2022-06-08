@@ -1,14 +1,14 @@
-import { environment } from "./../../environments/environment";
+import { environment } from "../../../environments/environment";
 import { Observable } from "rxjs";
 import { HttpClient } from "@angular/common/http";
-import { CardItem } from "./../shared/interfaces/card-item";
+import { CardItem } from "../../shared/interfaces/card-item";
 import { ShoppingCardService } from "./shopping-card.service";
 import { Injectable } from "@angular/core";
-import { Order } from "../pages/order/order.model";
+import { Order } from "../../pages/order/order.model";
 
-@Injectable({
-  providedIn: "root",
-})
+@Injectable(
+
+)
 export class OrderService {
   API = environment.apiURL;
 

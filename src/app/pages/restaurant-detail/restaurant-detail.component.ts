@@ -1,6 +1,6 @@
-import { MessageService } from "src/app/services/message.service";
+import { MessageService } from "src/app/core/services/message.service";
 import { Restaurant } from "src/app/shared/interfaces/restaurant";
-import { RestaurantService } from "./../../services/restaurant.service";
+import { RestaurantService } from "../../core/services/restaurant.service";
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 
