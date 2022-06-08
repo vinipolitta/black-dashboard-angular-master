@@ -28,7 +28,7 @@ export const AdminLayoutRoutes: Routes = [
   { path: "typography", component: TypographyComponent },
   { path: "home", component: HomeComponent },
   { path: "restaurant", component: RestaurantComponent },
-  { path: "order", component: OrderComponent },
+  { path: "order", loadChildren: () => import ("../../pages/order/order.module").then(m => m.OrderModule)  },
   { path: "order-summary", component: OrderSummaryComponent },
   { path: "about", loadChildren: () => import ("../../pages/about/about.module").then(m => m.AboutModule) },
   {
