@@ -370,5 +370,113 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "address": "dsadsad",
+      "number": 33,
+      "optionalAddress": "",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 4,
+          "menuId": "zlasagna"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "address": "dddddddddd",
+      "number": 444,
+      "optionalAddress": "teste",
+      "paymentOption": "DEB",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        },
+        {
+          "quantity": 3,
+          "menuId": "donut"
+        },
+        {
+          "quantity": 3,
+          "menuId": "bread"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "address": "45353453",
+      "number": 4,
+      "optionalAddress": "",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 3,
+          "menuId": "burger"
+        },
+        {
+          "quantity": 4,
+          "menuId": "fries"
+        },
+        {
+          "quantity": 4,
+          "menuId": "coke.png"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "address": "dasdasdsa",
+      "number": 333,
+      "optionalAddress": "sdasda",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "burger"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "address": "dasdasdsa",
+      "number": 444,
+      "optionalAddress": "44545",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 4,
+          "menuId": "fries"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "address": "dasdasdsa",
+      "number": 222,
+      "optionalAddress": "dasdadasdsa",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 6,
+          "menuId": "sunday"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "address": "dasdasdsa",
+      "number": 233,
+      "optionalAddress": "444",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 3,
+          "menuId": "cup-cake"
+        }
+      ],
+      "id": 7
+    }
+  ]
 }

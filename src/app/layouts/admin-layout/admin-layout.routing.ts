@@ -1,3 +1,4 @@
+import { OrderSummaryComponent } from './../../pages/order-summary/order-summary.component';
 import { ReviewsComponent } from "./../../pages/restaurant-detail/reviews/reviews.component";
 import { MenuComponent } from "./../../pages/restaurant-detail/menu/menu.component";
 import { RestaurantDetailComponent } from "./../../pages/restaurant-detail/restaurant-detail.component";
@@ -28,6 +29,7 @@ export const AdminLayoutRoutes: Routes = [
   { path: "home", component: HomeComponent },
   { path: "restaurant", component: RestaurantComponent },
   { path: "order", component: OrderComponent },
+  { path: "order-summary", component: OrderSummaryComponent },
   {
     path: "restaurant/:id",
     component: RestaurantDetailComponent,

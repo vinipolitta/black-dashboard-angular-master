@@ -27,6 +27,10 @@ import { ReviewsComponent } from "src/app/pages/restaurant-detail/reviews/review
 import { OrderComponent } from "src/app/pages/order/order.component";
 import { InputComponent } from "src/app/shared/input/input.component";
 import { RadioComponent } from "src/app/shared/radio/radio.component";
+import { OrderItensComponent } from "src/app/pages/order/order-itens/order-itens.component";
+import { DeliveryCostsComponent } from "src/app/pages/order/delivery-costs/delivery-costs.component";
+import { OrderSummaryComponent } from "src/app/pages/order-summary/order-summary.component";
+import { RatingComponent } from "src/app/shared/rating/rating.component";
 
 @NgModule({
   imports: [
@@ -56,6 +60,10 @@ import { RadioComponent } from "src/app/shared/radio/radio.component";
     OrderComponent,
     InputComponent,
     RadioComponent,
+    OrderItensComponent,
+    DeliveryCostsComponent,
+    OrderSummaryComponent,
+    RatingComponent
 
     // RtlComponent
   ],
