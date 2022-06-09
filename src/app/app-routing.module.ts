@@ -9,7 +9,7 @@ import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component
 const routes: Routes = [
   {
     path: "",
-    redirectTo: "restaurant",
+    redirectTo: "home",
     pathMatch: "full"
   },
   {
@@ -33,7 +33,7 @@ const routes: Routes = [
   },
   {
     path: "**",
-    redirectTo: "restaurant"
+    redirectTo: "home"
   }
 ];
 
