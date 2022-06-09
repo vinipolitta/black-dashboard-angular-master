@@ -9,6 +9,8 @@ import { OrderService } from "../core/services/order.service";
 import { RestaurantService } from "../core/services/restaurant.service";
 import { ShoppingCardService } from "../core/services/shopping-card.service";
 import { SnackbarComponent } from './messages/snackbar/snackbar.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { RouterModule } from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -17,8 +19,9 @@ import { SnackbarComponent } from './messages/snackbar/snackbar.component';
     MessagesComponent,
     RatingComponent,
     SnackbarComponent,
+    NotFoundComponent,
   ],
-  imports: [CommonModule, FormsModule, ReactiveFormsModule],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, RouterModule],
   exports: [
     InputComponent,
     RadioComponent,
@@ -27,7 +30,8 @@ import { SnackbarComponent } from './messages/snackbar/snackbar.component';
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    SnackbarComponent
+    SnackbarComponent,
+    NotFoundComponent
   ],
 })
 export class SharedModule {

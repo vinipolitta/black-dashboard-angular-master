@@ -1,3 +1,4 @@
+import { NotFoundComponent } from './shared/not-found/not-found.component';
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { BrowserModule } from "@angular/platform-browser";
@@ -33,7 +34,7 @@ const routes: Routes = [
   },
   {
     path: "**",
-    redirectTo: "home"
+    component: NotFoundComponent
   }
 ];
 
