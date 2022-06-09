@@ -13,9 +13,9 @@
             </p>
             <p><b>Avalie</b> sua experiência:</p>
             <p class="text-warning d-flex justify-content-center">
-              <app-rating (rated)="rated = true"></app-rating>
+              <app-rating (rated)="rated()"></app-rating>
             </p>
-            <p [hidden]="!rated">Obrigado pela sua avaliaçao</p>
+            <p *ngIf="!rated">Obrigado pela sua avaliaçao</p>
           </div>
 
           <!-- FIM DO CONTEUDO -->
