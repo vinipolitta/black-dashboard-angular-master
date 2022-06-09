@@ -1,25 +1,29 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { ToastrService } from 'ngx-toastr';
+import { HttpClient } from "@angular/common/http";
+import { Injectable } from "@angular/core";
+import { ToastrService } from "ngx-toastr";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class MessageService {
+  constructor(private http: HttpClient, private toastr: ToastrService) {}
 
-  constructor(private http: HttpClient, private toastr: ToastrService) { }
-
-
-  showNotification(typeMessage, contextMessage, titleMessage, position?, positionAlert?){
-    var definePossition = position ? position : 'bottom';
-    var alert = positionAlert ? positionAlert : 'right';
+  showNotification(
+    typeMessage,
+    contextMessage,
+    titleMessage,
+    position?,
+    positionAlert?
+  ) {
+    var definePossition = position ? position : "bottom";
+    var alert = positionAlert ? positionAlert : "right";
 
     this.toastr[typeMessage](contextMessage, titleMessage, {
-      disableTimeOut: true,
+      disableTimeOut: 5000,
       closeButton: true,
       enableHtml: true,
       toastClass: `alert alert-${typeMessage} alert-with-icon`,
-      positionClass: `toast-${definePossition}-${alert}`
+      positionClass: `toast-${definePossition}-${alert}`,
     });
   }
 }

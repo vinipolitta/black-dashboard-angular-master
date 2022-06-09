@@ -29,7 +29,6 @@ export class RestaurantComponent implements OnInit {
   getRestaurat() {
     this.restaurantService.getRestaurant().subscribe(
       (res: Restaurant[]) => {this.dataTables = res
-      console.log('###', this.dataTables);
       },
       (error: any) => {
         this.message.showNotification(

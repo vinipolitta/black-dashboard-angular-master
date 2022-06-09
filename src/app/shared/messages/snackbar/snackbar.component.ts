@@ -1,3 +1,5 @@
+import { delay, Observable } from "rxjs";
+import { NotificationService } from "./../../../core/services/notification.service";
 import {
   animate,
   state,
@@ -6,6 +8,8 @@ import {
   trigger,
 } from "@angular/animations";
 import { Component, OnInit } from "@angular/core";
+import { timer } from "rxjs";
+import { MessageService } from "src/app/core/services/message.service";
 
 @Component({
   selector: "app-snackbar",
@@ -35,10 +39,29 @@ import { Component, OnInit } from "@angular/core";
 export class SnackbarComponent implements OnInit {
   message: string = "testando";
   snackVisibility = "hidden";
+  timerSnackBar = timer(3000);
 
-  constructor() {}
+  constructor(
+    private notification: NotificationService,
+    public msgService: MessageService
+  ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.notify();
+  }
 
-
+  notify() {
+    this.notification.notifier.subscribe(async (msg: string) => {
+      this.msgService.showNotification(
+        "info",
+        `${msg}`,
+        "Info!!!",
+        "bottom",
+        "center"
+      );
+      this.timerSnackBar.subscribe(() => {
+        this.snackVisibility = "hidden";
+      });
+    });
+  }
 }

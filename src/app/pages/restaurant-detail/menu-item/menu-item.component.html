@@ -1,12 +1,16 @@
 <div class="card-header">
-  <table class="table tablesorter" id="">
-    <thead class="text-primary">
-    </thead>
+  <table class="table tablesorter" id="" [@menuItemAppeared]="menuItemState">
+    <thead class="text-primary"></thead>
     <tbody>
       <tr>
         <td style="width: 40%">
           <span class="">
-            <img class="widthImage" src="{{ menuItem.imagePath }}" />
+            <img
+              [@rubberBand]="rubber"
+              (click)="rubber = !rubber"
+              class="widthImage"
+              src="{{ menuItem.imagePath }}"
+            />
             &nbsp;
             <span class="">{{ menuItem.name }}</span>
           </span>
